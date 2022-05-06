@@ -1,0 +1,195 @@
+.topnav {
+    background: rgb(170, 40, 40);
+    display: flex;
+    vertical-align: middle;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: black 0.1rem 0.1rem 0.5rem;
+}
+
+.logo {
+    margin: auto auto auto 35rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: block;
+    width: 10rem;
+    height: auto;
+}
+
+body {
+    background: rgb(230, 230, 230);
+}
+
+nav {
+    font-size: 1rem;
+    margin: auto 35rem auto auto;
+    display: block;
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    margin: auto;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 7rem;
+    height: 1.5rem;
+    background:rgb(170, 40, 40);
+    padding: 0.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5rem;
+    box-shadow: black 0.1rem 0.1rem 0.2rem;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin: 6rem 35rem 1rem 35rem;
+    padding: 1rem;
+    font-size: 5rem;
+    background: #fff;
+
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin: auto;
+    display: block;
+    padding: 1rem;
+    max-width: 80%;
+}
+
+img {
+    max-width: 80%;
+    padding-bottom: 1rem;
+}
+
+article {
+    background: #fff;
+    margin: 1rem;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: auto 35rem 1rem 35rem;
+    padding-bottom: 1rem;
+}
+
+.illustration {
+    margin: auto;
+    display: block;
+}
+
+.top-article {
+    margin-top: 6rem;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background:rgb(170, 40, 40);
+    color:#fff;
+    text-align: center;
+    padding: 0.2rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.abonnent {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 5rem;
+    margin: 1rem 35rem;
+    background: #fff;
+}
+
+.clickable {
+    color: black;
+}
+
+.comment {
+    max-width: 80%;
+    align-items: center;
+    margin: 0 20rem;
+}
+
+.container {
+    max-width: 40rem;
+    margin: 1.8rem auto;
+    background:#fff;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+}
+
+label, input {
+    display: flex;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.hugsmeg, .clearfix {
+    display: block;
+    margin: 0 10rem;
+}
+
+.comment {
+    display: block;
+    transition: all 1s;
+}
+
+.commentClicked {
+    min-height: 0;
+    border: 0.06rem solid #eee;
+    border-radius: 0.3rem 0.6rem;
+}
+
+.container textarea {
+    width: 100%;
+    border: none;
+    background: #e8e8e8;
+    padding: 0.3rem 0.6rem;
+    height: 50%;
+    border-radius: 0.3rem 0.3rem 0 0;
+    border-bottom: 0.1rem solid #016ba8;
+    transition: all 0.5s;
+    margin-top: 0.9rem;
+}
+
+button.primaryContained {
+	background: #016ba8;
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+button.primaryContained:hover {
+	background: #9201A8;
+}

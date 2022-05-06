@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="no">
+
+    <head>
+
+        <title>Meiningar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet"/>
+        <link rel="icon" href="images/icon.png">
+        <!-- Vue JS -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+        <!-- jQuery -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    
+    </head>
+
+    <body>
+        
+        <section class="topnav">
+
+            <header>
+
+               <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="Dølingen-logo">
+                </a>
+
+            </header>
+
+            <nav>
+                <a href="lokale-nyhende.html" class="navbar">Lokale Nyhende</a>
+                <a href="utanbygds.html" class="navbar">Utanbygds</a>
+                <a href="sport.html" class="navbar">Sport</a>
+                <a href="meiningar.html" class="navbar">Meiningar</a>
+                <a href="bliabonnent.html" class="navbar">Bli abonnent</a>
+            </nav>
+
+        </section>
+        
+        <h1>Meiningar</h1>
+        
+                <section class="articles">
+
+                    <article>
+
+                        <h2>"Takk for tilliten!"</h2>
+
+                        <p>
+                            Eg vil berre takke for tilliten frå mine med-bygdingar angåande overrekkelsen av Kongens fortenestemedalje.
+                            Det er, som eg sa under intervju, at eg berre gjorde det eit kvart medmenneske ville gjort.
+                            <br><br>
+                            -Olav Gabardinbrok
+                        </p>
+
+                    </article>
+
+                    <article>
+
+                        <h2>"Nog är nog!"</h2>
+
+                        <p>
+                            Nej, det räcker!
+                            Jag tycker inte att framställningen av mig och min älgjakt var särskilt rättvis!
+                            Mitt salongsgevär kan fortfarande användas! Jag måste bara räta ut pipan och skaffa en ny tupp, så är geväret som nytt igen!
+                            <br><br>
+                            -Göran Feltsengsson
+                        </p>
+
+                    </article>
+
+                    <article>
+
+                        <h2>"Lokalt og lokalt."</h2>
+
+                        <p>
+                            Eg vil berre si at 'Lokal' spalten dekker no eit veldig stort område. Når dykk har saker i frå Hokksund, til heilt oppi Hitterdalen og lengre nord.
+                            <br><br>
+                            -Gudbrand Svelingsgard
+                        </p>
+
+                    </article>                    
+
+
+
+                    <section id="app">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="comment">
+                                        <p v-for="items in item" v-text="items"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <textarea type="text" class="input" placeholder="Skriv din kommentar" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                    <button v-on:click="addItem()" class="primaryContained float-right" type="submit">Legg til kommentar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+        
+         <footer>Ⓒ Dølingen/Tekst og tegninger av Christian SB 2022 (Med stor takk til Kjell Aukrust for inspirasjon.)</footer>
+
+    </body>
+
+</html>
